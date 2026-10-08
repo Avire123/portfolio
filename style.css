@@ -23,6 +23,10 @@
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +39,10 @@ body {
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.6;
+}
+
+.section, .hero {
+    scroll-margin-top: 75px;
 }
 
 /* Header & Nav */
