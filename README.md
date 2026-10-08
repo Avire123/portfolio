@@ -45,6 +45,8 @@ portfolio/
 ├── index.html        # Main HTML entry point & semantic markup
 ├── style.css         # Color schemes, custom variables, responsive styles
 ├── script.js         # Theme toggler & project filtering logic
+├── streamlit_app.py  # Streamlit Community Cloud entrypoint
+├── requirements.txt  # Python package dependencies (Streamlit)
 ├── .gitignore        # Git ignore rules
 └── README.md         # Project documentation & overview
 ```
@@ -53,23 +55,35 @@ portfolio/
 
 ## 🚀 Quick Start & Local Setup
 
-To run this portfolio locally on your machine:
-
+### Option 1: Static Web (Direct HTML)
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Avire123/portfolio.git
    cd portfolio
    ```
-
 2. **Open in browser:**
-   - Simply double-click `index.html`, or
-   - Use VS Code Live Server extension, or
-   - Run a lightweight Python server:
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     ```
-   - Open `http://localhost:8000` in your web browser.
+   - Double-click `index.html`, or
+   - Use VS Code Live Server extension.
+
+### Option 2: Run with Streamlit
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Launch Streamlit:**
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+---
+
+## ☁️ Deploy to Streamlit Community Cloud
+
+1. Log in to [share.streamlit.io](https://share.streamlit.io/) with your GitHub account.
+2. Click **New app**.
+3. Select your repository: `Avire123/portfolio`.
+4. Set **Branch** to `main` and **Main file path** to `streamlit_app.py`.
+5. Click **Deploy!** 🚀
 
 ---
 
