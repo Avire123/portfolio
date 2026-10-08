@@ -72,3 +72,4 @@ def get_bundled_html():
 # Render the self-contained portfolio HTML
 bundled_html = get_bundled_html()
 components.html(bundled_html, height=1800, scrolling=True)
+
