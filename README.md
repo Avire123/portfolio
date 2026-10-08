@@ -18,6 +18,7 @@ A modern, responsive, and minimalist personal portfolio website built with seman
 
 ## ✨ Features
 
+- 🎯 **Mindset & Philosophy of Achievement**: Inspiring principles of success, disciplined execution, and high-performance mentality showcased at the top of the portfolio.
 - 🌓 **Light / Dark Mode**: Custom theme switcher with persistent local storage support.
 - 📂 **Interactive Project Showcase**: Dynamic client-side category filtering (Data Science, Streamlit Apps, Web Apps, and Articles).
 - 🚀 **GitHub & Streamlit Integration**: Direct links to open-source GitHub repositories and live Streamlit Cloud apps.
