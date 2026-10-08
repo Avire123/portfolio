@@ -76,9 +76,10 @@ To run this portfolio locally on your machine:
 ## 🌐 Connect & Profiles
 
 - **GitHub**: [@Avire123](https://github.com/Avire123)
-- **Kaggle**: [Kaggle Profile](https://kaggle.com)
-- **Medium**: [Medium Articles](https://medium.com)
-- **LinkedIn**: [LinkedIn Profile](https://linkedin.com)
+- **LinkedIn**: [John Isaac Mcharo](https://www.linkedin.com/in/john-isaac-mcharo-a12594217)
+- **Medium**: [@isaacmcharo9](https://medium.com/@isaacmcharo9)
+- **Data Science Portfolio**: [isaacmcharo9](https://www.datascienceportfol.io/isaacmcharo9)
+- **Streamlit Community Cloud**: [@avire123](https://share.streamlit.io/user/avire123)
 
 ---
 
