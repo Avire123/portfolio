@@ -148,99 +148,164 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2.5rem;
 }
 
-/* Hero Quote & Mindset Banner */
-.hero-quote {
-    max-width: 760px;
+/* Mindset Slider Carousel */
+.mindset-slider-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 780px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.slider-track-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: grab;
+}
+
+.slider-track-container:active {
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0.25rem;
+}
+
+.slide-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-left: 4px solid var(--accent);
     border-radius: 10px;
-    padding: 1.4rem 1.8rem;
+    padding: 2rem 2.5rem;
     box-shadow: var(--shadow);
-    text-align: left;
-    position: relative;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
 }
 
-.hero-quote .quote-mark {
-    font-size: 1.25rem;
+.slide-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.slide-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    font-weight: 600;
     color: var(--accent);
-    opacity: 0.75;
-    margin-bottom: 0.2rem;
+    background: var(--bg-alt);
+    padding: 0.2rem 0.65rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.hero-quote p {
-    font-size: 1.05rem;
-    font-style: italic;
+.slide-header h3 {
+    font-size: 1.25rem;
     color: var(--text-main);
-    line-height: 1.6;
     margin: 0;
 }
 
-.hero-quote span {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--accent);
-    align-self: flex-end;
-}
-
-/* Mindset Section */
-.mindset-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-}
-
-.mindset-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.8rem;
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.mindset-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-}
-
-.mindset-card .quote-icon {
-    font-size: 1.6rem;
-    color: var(--accent);
-    margin-bottom: 0.8rem;
-}
-
-.mindset-card h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.6rem;
-    color: var(--text-main);
-}
-
-.mindset-card blockquote {
-    font-size: 0.95rem;
+.slide-card blockquote {
+    font-size: 1.08rem;
     font-style: italic;
     color: var(--text-main);
-    line-height: 1.55;
-    margin-bottom: 0.9rem;
+    line-height: 1.6;
+    margin: 0.4rem 0 1rem 0;
+    max-width: 620px;
 }
 
-.mindset-card p.takeaway {
-    font-size: 0.85rem;
+.slide-takeaway {
+    font-size: 0.9rem;
     color: var(--text-muted);
-    line-height: 1.45;
-    margin-top: auto;
-    padding-top: 0.75rem;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 0.85rem;
     border-top: 1px dashed var(--border-color);
+    max-width: 580px;
+}
+
+.slider-arrow {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    box-shadow: var(--shadow);
+    font-size: 0.95rem;
+}
+
+.slider-arrow:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+    transform: scale(1.06);
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 0;
+}
+
+.slider-dots .dot.active {
+    background: var(--accent);
+    width: 28px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .slide-card {
+        padding: 1.5rem 1.2rem;
+    }
+    .slider-arrow {
+        display: none;
+    }
 }
 
 .btn {
