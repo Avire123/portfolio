@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Isaac Mcharo | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Isaac Mcharo<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#websites">Websites</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid me-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="badge">Welcome to my portfolio</span>
+            <h1>Data Scientist & Software Developer</h1>
+            <p>Building data-driven solutions, interactive web applications, and analytical pipelines.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">Core Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Data Science & ML</h3>
+                <p>Python, Pandas, NumPy, Scikit-Learn, Predictive Modeling, EDA</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript (ES6+), FastAPI, Streamlit</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Tools & Scraping</h3>
+                <p>Git, GitHub, VS Code, Jupyter, BeautifulSoup, Requests</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- External Websites & Platforms -->
+    <section class="section" id="websites">
+        <h2 class="section-title">Online Profiles & Platforms</h2>
+        <div class="websites-grid">
+            <a href="https://github.com/Avire123" target="_blank" class="website-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub Repository</h3>
+                <p>Explore source code for data science and web development projects.</p>
+                <span class="link-label">Visit Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+            <a href="https://kaggle.com" target="_blank" class="website-card">
+                <i class="fa-brands fa-kaggle"></i>
+                <h3>Kaggle Profile</h3>
+                <p>Data science notebooks, datasets, and competitive machine learning models.</p>
+                <span class="link-label">Visit Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+            <a href="https://medium.com" target="_blank" class="website-card">
+                <i class="fa-brands fa-medium"></i>
+                <h3>Medium Publications</h3>
+                <p>Analytical articles, tutorials, and technical data insights.</p>
+                <span class="link-label">Read Articles <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="website-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn Profile</h3>
+                <p>Professional updates, networking, and career milestones.</p>
+                <span class="link-label">Connect <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ds">Data Science</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="ds">
+                <div class="project-body">
+                    <span class="tag">Data Science</span>
+                    <h3>Ride-Hailing EDA & Modeling</h3>
+                    <p>Exploratory data analysis and predictive demand modeling for intra-city trips.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Avire123" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="web">
+                <div class="project-body">
+                    <span class="tag">Web App</span>
+                    <h3>DevStart Beginner Hub</h3>
+                    <p>Interactive single-file sandbox, cheat sheets, and quiz tools for developers.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Avire123" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Isaac Mcharo. Built with Cream & White styling.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
