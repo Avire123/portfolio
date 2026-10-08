@@ -26,8 +26,9 @@ filterBtns.forEach(btn => {
         
         const filter = btn.getAttribute('data-filter');
         projectCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                card.style.display = 'block';
+            const categories = (card.getAttribute('data-category') || '').split(' ');
+            if (filter === 'all' || categories.includes(filter)) {
+                card.style.display = 'flex';
             } else {
                 card.style.display = 'none';
             }

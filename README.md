@@ -19,10 +19,12 @@ A modern, responsive, and minimalist personal portfolio website built with seman
 ## ✨ Features
 
 - 🌓 **Light / Dark Mode**: Custom theme switcher with persistent local storage support.
-- 📂 **Interactive Project Showcase**: Dynamic client-side category filtering (Data Science & Web Apps).
-- 🔗 **Online Platforms Hub**: Direct portal cards to GitHub, Kaggle, Medium, and LinkedIn.
+- 📂 **Interactive Project Showcase**: Dynamic client-side category filtering (Data Science, Streamlit Apps, Web Apps, and Articles).
+- 🚀 **GitHub & Streamlit Integration**: Direct links to open-source GitHub repositories and live Streamlit Cloud apps.
+- ✍️ **Medium Articles & Publications**: Integrated links to technical write-ups and data analysis publications.
+- 🔗 **Online Platforms Hub**: Direct portal cards to GitHub, LinkedIn, Medium, Data Science Portfolio, and Streamlit Community Cloud.
 - 📬 **Interactive Contact Form**: Sleek contact interface with validation and clean UX.
-- ⚡ **Zero Framework Dependencies**: Fast load times with vanilla HTML, CSS, and JS.
+- ⚡ **Zero Heavy Framework Dependencies**: Fast, lightweight performance.
 
 ---
 
